@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Date and time in j.s</title>
+</head>
+<body>
+    <script>
+    
+        let weekArr = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "stuarday"];
+        let monthArr = ["jan", "feb", "march", "apr", "may", "june", "july", "aug", "sep", "oct", "nov", "dec"];
+        let currentDate = new Date();
+        let weekDay = currentDate.getDay();
+        let month = currentDate.getMonth();
+        let date = currentDate.getDate();
+        let year = currentDate.getFullYear();
+        let hour = currentDate.getHours();
+        let min = currentDate.getMinutes();
+        let second = currentDate.getSeconds();
+        let outdate = date + weekArr[weekDay] + (month + 1) + monthArr[month] + year + hour + ":"+ min + ":" + second;
+        let outdate2 = `${date} ${weekArr[weekDay]} ${(month + 1)} ${monthArr[month]} ${year} ${hour}:${min}:${second}` 
+        console.log(outdate2);
+        
+        </script>
+    
+</body>
+</html>
